@@ -229,7 +229,7 @@ func requestCameraAccess() -> Bool {
 }
 
 // Parse --mode argument.
-var mode = "hand"
+var mode = "body"
 let args = CommandLine.arguments
 if let i = args.firstIndex(of: "--mode"), i + 1 < args.count {
     mode = args[i + 1]

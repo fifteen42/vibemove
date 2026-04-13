@@ -14,12 +14,12 @@ VibeMove runs in one of two modes, picked at launch:
 
 | Mode | Vibe | Who it's for |
 | --- | --- | --- |
-| **`hand`** (default) | Subtle. Sit at your desk. | Coding, writing, editing — close to the keyboard. |
-| **`body`** | Loud. Stand up, move. | Standing desk, kitchen, living room — away from the keyboard. |
+| **`body`** (default) | Loud. Stand up, move. | Standing desk, kitchen, living room — away from the keyboard. The whole point. |
+| **`hand`** | Subtle. Sit at your desk. | Coding, writing, editing — close to the keyboard. |
 
 ```bash
-swift run VibeMove              # hand mode (default)
-swift run VibeMove -- --mode body
+swift run VibeMove                       # body mode (default)
+swift run VibeMove -- --mode hand        # hand mode
 ```
 
 ## Hand Mode
@@ -74,8 +74,8 @@ Every successful trigger plays a distinct macOS system sound so you always know 
 git clone https://github.com/fifteen42/vibemove.git
 cd vibemove
 swift build
-swift run VibeMove                       # hand mode
-swift run VibeMove -- --mode body        # body mode
+swift run VibeMove                       # body mode (default)
+swift run VibeMove -- --mode hand        # hand mode
 ```
 
 ### Permissions
